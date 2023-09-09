@@ -1,0 +1,54 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    @apply pb-3;
+}
+
+.main-nav {
+    @apply flex flex-col;
+}
+
+.main-nav a {
+    @apply p-4 text-pink-400 text-xl border-b border-pink-700 hover:bg-pink-800 duration-500;
+}
+
+.toogled-nav {
+    @apply flex flex-col
+}
+
+.toogled-nav a {
+    @apply py-4 pl-1 text-pink-400 text-xl border-b border-pink-700 hover:bg-pink-800 duration-500;
+}
+
+#sidebar .full {
+    @apply w-[350px];
+}
+
+#sidebar .min {
+    @apply w-[40px];
+}
+
+.hidden {
+    display: none;
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead tr {
+    @apply bg-pink-600 text-pink-100;
+}
+
+.table th,
+.table td {
+    @apply p-2 border border-pink-400;
+    text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fd89c941;
+}
